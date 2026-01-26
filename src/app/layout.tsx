@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Sidebar />
         <AppRouterCacheProvider options={{ key: "mui" }}>
           <ThemeProvider theme={theme}>
+            <Sidebar />
             <CssBaseline>{children}</CssBaseline>
           </ThemeProvider>
         </AppRouterCacheProvider>
