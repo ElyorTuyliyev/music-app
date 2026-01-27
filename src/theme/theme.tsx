@@ -37,6 +37,16 @@ const theme = createTheme({
         },
       },
     },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          "& .MuiInputBase-root": {
+            height: 38,
+            borderRadius: 16,
+          },
+        },
+      },
+    },
   },
 });
 

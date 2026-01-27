@@ -28,7 +28,17 @@ export default function RootLayout({
               }}
             >
               <Sidebar />
-              <CssBaseline>{children}</CssBaseline>
+              <CssBaseline>
+                <Box
+                  sx={{
+                    maxWidth: "1031px",
+                    width: "100%",
+                    margin: "0 auto",
+                  }}
+                >
+                  {children}
+                </Box>
+              </CssBaseline>
             </Box>
           </ThemeProvider>
         </AppRouterCacheProvider>
