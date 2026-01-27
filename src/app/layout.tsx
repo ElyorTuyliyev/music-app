@@ -1,9 +1,10 @@
-import "./globals.css";
 import React from "react";
+import { Box, CssBaseline, ThemeProvider } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+
+import "./globals.css";
 import theme from "../theme/theme";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import Sidebar from "../components/Sidebar/Sidebar";
+import Sidebar from "../layout/Sidebar/Sidebar";
 
 export const metadata = {
   title: "Best Musics",
@@ -20,8 +21,15 @@ export default function RootLayout({
       <body>
         <AppRouterCacheProvider options={{ key: "mui" }}>
           <ThemeProvider theme={theme}>
-            <Sidebar />
-            <CssBaseline>{children}</CssBaseline>
+            <Box
+              sx={{
+                display: "flex",
+                gap: "25px",
+              }}
+            >
+              <Sidebar />
+              <CssBaseline>{children}</CssBaseline>
+            </Box>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
