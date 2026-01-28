@@ -1,6 +1,9 @@
-import { Box, Button, TextField } from "@mui/material";
 import Link from "next/link";
+import { Box, Button, InputAdornment, TextField } from "@mui/material";
+import SearchIcon from "../../assets/search-icon.svg";
+
 import { HeaderStyle } from "./header.style";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -8,19 +11,38 @@ export default function Header() {
       <header className="header">
         <Box className="header__search-wrapper">
           <TextField
-            className="header__search"
             fullWidth
+            className="header__search"
             placeholder="Search For Musics, Artists, ..."
+            slotProps={{
+              input: {
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <Image src={SearchIcon} alt="search" />
+                  </InputAdornment>
+                ),
+              },
+            }}
           />
         </Box>
-        <Box className="header__link">
-          <Link href={"#"}>About Us</Link>
-          <Link href={"#"}>Contact</Link>
-          <Link href={"#"}>Premium</Link>
+        <Box className="header__link-wrapper">
+          <Link className="header__links" href={"#"}>
+            About Us
+          </Link>
+          <Link className="header__links" href={"#"}>
+            Contact
+          </Link>
+          <Link className="header__links" href={"#"}>
+            Premium
+          </Link>
         </Box>
-        <Box className="header__btn">
-          <Button variant="outlined">Login</Button>
-          <Button variant="contained">Sign Up</Button>
+        <Box className="header__btn-wrapper">
+          <Button className="header__btn" variant="outlined">
+            Login
+          </Button>
+          <Button className="header__btn" variant="contained">
+            Sign Up
+          </Button>
         </Box>
       </header>
     </HeaderStyle>

@@ -47,6 +47,16 @@ const theme = createTheme({
         },
       },
     },
+    MuiInputBase: {
+      styleOverrides: {
+        input: {
+          "&::placeholder": {
+            fontSize: "12px",
+            color: "#888",
+          },
+        },
+      },
+    },
   },
 });
 
