@@ -1,34 +1,25 @@
-import Vector from "../../../assets/Vector.svg";
-import Album from "../../../assets/album-icon.svg";
-import Profile from "../../../assets/profile.svg";
-import RecentAdd from "../../../assets/recent-add.svg";
-import HeartIcon from "../../../assets/heart-icon.svg";
-import Playlist from "../../../assets/ph_playlist.svg";
-import AddPlaylist from "../../../assets/add-playlist.svg";
-import Setting from "../../../assets/setting-icon.svg";
-import RecentlyInstalled from "../../../assets/recently-installed.svg";
 export const SIDEBAR_LINK = [
   {
     title: "Menu",
     link: [
       {
         key: "home",
-        icon: Vector,
+        icon: "vector",
         name: "Home",
         path: "/",
       },
       {
-        icon: Vector,
+        icon: "vector",
         name: "Discover",
         path: "/discover",
       },
       {
-        icon: Album,
+        icon: "album",
         name: "Albums",
         path: "/albums",
       },
       {
-        icon: Profile,
+        icon: "profile",
         name: "Artists",
         path: "/artists",
       },
@@ -38,14 +29,14 @@ export const SIDEBAR_LINK = [
     title: "Library",
     link: [
       {
-        icon: RecentAdd,
+        icon: "recentAdd",
         path: "/recently",
         name: "Recently Added",
       },
       {
         path: "/most",
         name: "Most played",
-        icon: RecentlyInstalled,
+        icon: "recentlyInstalled",
       },
     ],
   },
@@ -53,17 +44,17 @@ export const SIDEBAR_LINK = [
     title: "Playlist and favorite",
     link: [
       {
-        icon: HeartIcon,
+        icon: "heartIcon",
         path: "/favorites",
         name: "Your favorites",
       },
       {
-        icon: Playlist,
+        icon: "playlist",
         path: "/playlist",
         name: "Your playlist",
       },
       {
-        icon: AddPlaylist,
+        icon: "addPlaylist",
         path: "/add",
         name: "Add playlist",
       },
@@ -73,7 +64,7 @@ export const SIDEBAR_LINK = [
     title: "General",
     link: [
       {
-        icon: Setting,
+        icon: "setting",
         name: "Setting",
         path: "/setting",
       },

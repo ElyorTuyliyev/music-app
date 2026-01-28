@@ -5,6 +5,7 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import "./globals.css";
 import theme from "../theme/theme";
 import Sidebar from "../layout/Sidebar/Sidebar";
+import Header from "../layout/Header/Header";
 
 export const metadata = {
   title: "Best Musics",
@@ -36,6 +37,7 @@ export default function RootLayout({
                     margin: "0 auto",
                   }}
                 >
+                  <Header />
                   {children}
                 </Box>
               </CssBaseline>

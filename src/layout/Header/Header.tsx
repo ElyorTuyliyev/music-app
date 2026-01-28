@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Box, Button, InputAdornment, TextField } from "@mui/material";
-import SearchIcon from "../../assets/search-icon.svg";
 
 import { HeaderStyle } from "./header.style";
-import Image from "next/image";
+import { AppIcon } from "../../components/Icon/icon";
 
 export default function Header() {
   return (
@@ -18,7 +17,7 @@ export default function Header() {
               input: {
                 startAdornment: (
                   <InputAdornment position="start">
-                    <Image src={SearchIcon} alt="search" />
+                    <AppIcon name="search" />
                   </InputAdornment>
                 ),
               },

@@ -2,12 +2,12 @@
 import { Box, Button, Typography } from "@mui/material";
 import { SidebarStyle } from "./Sidebar.style";
 import Logo from "../../assets/logo.svg";
-import Logout from "../../assets/log-out.svg";
 import { SIDEBAR_LINK } from "./constants/sidebarLink";
 
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { AppIcon } from "../../components/Icon/icon";
 
 export default function Sidebar() {
   const pathName = usePathname();
@@ -31,11 +31,7 @@ export default function Sidebar() {
                     className={`sidebar__links ${path === pathName ? "active__link" : ""}`}
                     href={path}
                   >
-                    <Image
-                      src={icon}
-                      alt="link-icon"
-                      className="sidebar__link-icon"
-                    />
+                    <AppIcon name={icon} />
                     {name}
                   </Link>
                 </Box>
@@ -43,10 +39,7 @@ export default function Sidebar() {
             </Box>
           ))}
         </Box>
-        <Button
-          variant="outlined"
-          startIcon={<Image src={Logout} alt="Logout-icon" />}
-        >
+        <Button variant="outlined" startIcon={<AppIcon name="logout" />}>
           Logout
         </Button>
       </Box>
