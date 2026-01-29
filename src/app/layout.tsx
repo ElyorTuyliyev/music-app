@@ -6,6 +6,7 @@ import "./globals.css";
 import theme from "../theme/theme";
 import Sidebar from "../layout/Sidebar/Sidebar";
 import Header from "../layout/Header/Header";
+import Footer from "../layout/Footer/Footer";
 
 export const metadata = {
   title: "Best Musics",
@@ -35,10 +36,13 @@ export default function RootLayout({
                     maxWidth: "1031px",
                     width: "100%",
                     margin: "0 auto",
+                    display: "flex",
+                    flexDirection: "column",
                   }}
                 >
                   <Header />
                   {children}
+                  <Footer />
                 </Box>
               </CssBaseline>
             </Box>
