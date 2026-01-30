@@ -7,7 +7,7 @@ export const HeaderStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 34px 0 0 0;
+    padding: 34px 0;
   }
 
   .header__search-wrapper {
