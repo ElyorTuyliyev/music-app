@@ -1,13 +1,16 @@
+"use client";
 import Link from "next/link";
 import { Box, Button, InputAdornment, TextField } from "@mui/material";
 
 import { HeaderStyle } from "./header.style";
 import { AppIcon } from "../../components/Icon/icon";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathName = usePathname();
   return (
     <HeaderStyle>
-      <header className="header">
+      <header className={`header ${pathName === "/" ? "position" : ""}`}>
         <Box className="header__search-wrapper">
           <TextField
             fullWidth

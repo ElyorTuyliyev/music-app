@@ -26,7 +26,7 @@ export default function RootLayout({
             <Box
               sx={{
                 display: "flex",
-                gap: "25px",
+                justifyContent: "space-between",
               }}
             >
               <Sidebar />
@@ -36,8 +36,6 @@ export default function RootLayout({
                     maxWidth: "1031px",
                     width: "100%",
                     margin: "0 auto",
-                    display: "flex",
-                    flexDirection: "column",
                   }}
                 >
                   <Header />
