@@ -12,7 +12,7 @@ export const HomeStyle = styled.div`
     display: flex;
     justify-content: end;
     flex-direction: column;
-    padding: 0 10px 113px 10px;
+    padding: 0 25px 113px 25px;
     margin: 48px 0 0 0;
     background-repeat: no-repeat;
     background-image: url(${homeBc.src});

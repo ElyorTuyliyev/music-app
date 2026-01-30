@@ -18,7 +18,7 @@ export const HeaderStyle = styled.div`
     right: 0;
     top: 48px;
     bottom: 0;
-    padding: 36px 10px;
+    padding: 36px 25px;
   }
 
   .header__search-wrapper {
@@ -29,6 +29,11 @@ export const HeaderStyle = styled.div`
     display: flex;
     align-items: center;
     gap: ${theme.spacing(4)};
+  }
+
+  .header__search {
+    background-color: #121212;
+    border-radius: 16px;
   }
 
   .header__links {
@@ -42,6 +47,6 @@ export const HeaderStyle = styled.div`
   }
 
   .header__btn {
-    padding: 7px 63px;
+    padding: 7px 57px;
   }
 `;

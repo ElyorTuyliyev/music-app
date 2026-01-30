@@ -28,26 +28,34 @@ export const SidebarStyle = styled.div`
   }
 
   .sidebar__title {
+    font-size: 12px;
     color: ${theme.palette.primary.main};
   }
 
   .sidebar__links {
-    font-size: 16px;
+    font-size: 14px;
     transition: 0.2s;
     display: flex;
     align-items: center;
     gap: ${theme.spacing(1)};
     border-radius: 9px;
     color: ${theme.palette.common.white};
-    :hover {
-      padding: 6px 8px;
-      background-color: ${theme.palette.primary.main};
-    }
+  }
+
+  .sidebar__icons {
+    width: 16px;
   }
 
   .active__link {
     padding: 6px 8px;
     background-color: ${theme.palette.primary.dark};
-    font-size: 18px;
+    font-size: 16px;
+    .sidebar__icons {
+      width: 24px;
+    }
+  }
+
+  .sidebar__btn {
+    color: ${theme.palette.primary.main};
   }
 `;

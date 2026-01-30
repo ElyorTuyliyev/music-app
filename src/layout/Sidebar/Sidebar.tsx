@@ -31,7 +31,7 @@ export default function Sidebar() {
                     className={`sidebar__links ${path === pathName ? "active__link" : ""}`}
                     href={path}
                   >
-                    <AppIcon name={icon} />
+                    <AppIcon className="sidebar__icons" name={icon} />
                     {name}
                   </Link>
                 </Box>
@@ -39,7 +39,11 @@ export default function Sidebar() {
             </Box>
           ))}
         </Box>
-        <Button variant="outlined" startIcon={<AppIcon name="logout" />}>
+        <Button
+          variant="text"
+          className="sidebar__btn"
+          startIcon={<AppIcon className="sidebar__icons" name="logout" />}
+        >
           Logout
         </Button>
       </Box>

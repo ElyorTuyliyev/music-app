@@ -33,7 +33,7 @@ export default function RootLayout({
               <CssBaseline>
                 <Box
                   sx={{
-                    maxWidth: "1031px",
+                    maxWidth: "1231px",
                     width: "100%",
                     margin: "0 auto",
                   }}

@@ -1,5 +1,6 @@
 import type { FC, SVGProps } from "react";
 
+import Home from "./home.svg";
 import Phone from "./phone.svg";
 import Vector from "./Vector.svg";
 import Logout from "./log-out.svg";
@@ -20,6 +21,7 @@ import RecentlyInstalled from "./recently-installed.svg";
 type SvgIcon = FC<SVGProps<SVGSVGElement>>;
 
 export const icons: Record<string, SvgIcon> = {
+  home: Home,
   album: Album,
   heart: Heart,
   phone: Phone,

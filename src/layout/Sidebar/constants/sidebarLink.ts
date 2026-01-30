@@ -4,7 +4,7 @@ export const SIDEBAR_LINK = [
     link: [
       {
         key: "home",
-        icon: "vector",
+        icon: "home",
         name: "Home",
         path: "/",
       },
