@@ -17,10 +17,11 @@ import Playlist from "./ph_playlist.svg";
 import Setting from "./setting-icon.svg";
 import AddPlaylist from "./add-playlist.svg";
 import RecentlyInstalled from "./recently-installed.svg";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 type SvgIcon = FC<SVGProps<SVGSVGElement>>;
 
-export const icons: Record<string, any> = {
+export const icons: Record<string, StaticImport> = {
   home: Home,
   album: Album,
   heart: Heart,
