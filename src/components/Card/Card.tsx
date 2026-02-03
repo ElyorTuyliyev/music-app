@@ -4,7 +4,13 @@ import { Box, Typography } from "@mui/material";
 import { CardStyle } from "./Card.style";
 import image from "./epp.png";
 
-export default function MusicCard() {
+type MusicCardProps = {
+  name: string;
+  artist?: string | "";
+  imgSrc: string;
+};
+
+export default function MusicCard({ name, artist, imgSrc }: MusicCardProps) {
   return (
     <CardStyle>
       <Box className="card">
@@ -14,7 +20,7 @@ export default function MusicCard() {
             Adele 21
           </Typography>
           <Typography className="card__subtitle" variant="inherit">
-            Adele
+            {artist}
           </Typography>
         </Box>
       </Box>
