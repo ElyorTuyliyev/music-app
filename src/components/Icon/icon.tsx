@@ -12,7 +12,7 @@ export const AppIcon = ({ name, size = 24, className }: Props) => {
   const icon = icons[name];
   return (
     <Image
-      src={icon.toString()}
+      src={icon}
       alt={name}
       width={size}
       height={size}

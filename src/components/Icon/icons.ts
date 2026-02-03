@@ -20,7 +20,7 @@ import RecentlyInstalled from "./recently-installed.svg";
 
 type SvgIcon = FC<SVGProps<SVGSVGElement>>;
 
-export const icons: Record<string, SvgIcon> = {
+export const icons: Record<string, any> = {
   home: Home,
   album: Album,
   heart: Heart,
