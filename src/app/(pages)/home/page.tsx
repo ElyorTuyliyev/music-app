@@ -1,5 +1,7 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, ButtonBase, Typography } from "@mui/material";
+
 import { HomeStyle } from "./home";
+import MusicCard from "@/src/components/Card/Card";
 
 export default function HomePage() {
   return (
@@ -21,6 +23,9 @@ export default function HomePage() {
               <Button variant="outlined">Create Playlist</Button>
             </Box>
           </Box>
+        </section>
+        <section>
+          <MusicCard />
         </section>
       </main>
     </HomeStyle>
