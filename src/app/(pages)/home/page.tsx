@@ -25,7 +25,7 @@ export default function HomePage() {
           </Box>
         </section>
         <section>
-          <MusicCard />
+          <MusicCard name="Adele 21" artist="Adele" imgSrc="/epp.png" />
         </section>
       </main>
     </HomeStyle>
