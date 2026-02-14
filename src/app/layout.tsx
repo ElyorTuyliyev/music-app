@@ -36,6 +36,7 @@ export default function RootLayout({
                     maxWidth: "1231px",
                     width: "100%",
                     margin: "0 auto",
+                    height: "100vh",
                   }}
                 >
                   <Header />
