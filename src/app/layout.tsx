@@ -37,6 +37,10 @@ export default function RootLayout({
                     width: "100%",
                     margin: "0 auto",
                     height: "100vh",
+                    overflowY: "auto",
+                    "&::-webkit-scrollbar": {
+                      display: "none",
+                    },
                   }}
                 >
                   <Header />
